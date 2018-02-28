@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MoneyChange 1.0</string>
+   <string name="Title"> MoneyChange</string>
+    <string name="USA">Usa Dollars</string>
+    <string name="EU">Euros</string>
+    <string name="SW">Francos</string>
+
+
+    <string-array name="Coins">USA
+        <item>@string/USA</item>
+        <item>@string/EU</item>
+        <item>@string/SW</item>
+    </string-array>
+
+</resources>
