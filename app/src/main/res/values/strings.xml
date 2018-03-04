@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">MoneyChange 1.0</string>
-   <string name="Title"> MoneyChange</string>
+    <string name="app_name">MoneyChange 1.1</string>
+   <string name="Title"> Seleccione la moneda que quiere cambiar.MoneyChange.</string>
     <string name="USA">Usa Dollars</string>
     <string name="EU">Euros</string>
     <string name="SW">Francos</string>
+    <string name="since">Indique el monto </string>
+    <string name="resultado">Resutado </string>
+
+
 
 
     <string-array name="Coins">USA
