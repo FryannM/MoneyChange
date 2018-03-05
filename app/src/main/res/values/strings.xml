@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">MoneyChange 1.1</string>
-   <string name="Title"> Seleccione la moneda que quiere cambiar.MoneyChange.</string>
+   <string name="Title">MoneyChange.</string>
     <string name="USA">Usa Dollars</string>
     <string name="EU">Euros</string>
-    <string name="SW">Francos</string>
+    <string name="DOP">Dominican Pesos</string>
     <string name="since">Indique el monto </string>
     <string name="resultado">Resutado </string>
+    <string name="Calcular">Calcular</string>
 
 
 
@@ -13,7 +14,7 @@
     <string-array name="Coins">USA
         <item>@string/USA</item>
         <item>@string/EU</item>
-        <item>@string/SW</item>
+        <item>@string/DOP</item>
     </string-array>
 
 </resources>

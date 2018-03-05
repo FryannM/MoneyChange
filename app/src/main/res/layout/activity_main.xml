@@ -7,32 +7,28 @@
     android:layout_height="wrap_content"
     tools:context="com.example.admin.moneychange.MainActivity">
 
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:gravity="center_horizontal"-->
 
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_marginLeft="1dp"-->
-        <!--android:layout_marginStart="0dp"-->
-        <!--android:drawableLeft="@mipmap/changemoney"-->
-        <!--android:text="@string/Title" />-->
 
     <TextView
+        android:id="@+id/TituloID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:drawableLeft="@mipmap/changemoney"
         android:text="@string/Title" />
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="fill_parent"
+        android:id="@+id/spinner_desde"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+
+
+        android:drawSelectorOnTop="true"
+        android:entries="@array/Coins" />
+    <Spinner
+        android:id="@+id/spinner_hasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+
         android:drawSelectorOnTop="true"
         android:entries="@array/Coins" />
 
@@ -42,12 +38,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="@string/since"
-        android:inputType="number"/>
+        android:inputType="phone"/>
 
-        <EditText
-            android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Calcular"/>
+
+
+    <EditText
+
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/resultado"/>
+            android:hint="@string/resultado"
+            android:editable="false"/>
+
 
 
 
