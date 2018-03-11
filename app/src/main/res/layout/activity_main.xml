@@ -5,6 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
+
     tools:context="com.example.admin.moneychange.MainActivity">
 
 
@@ -35,15 +37,18 @@
 
 
     <EditText
+
+        android:id="@+id/quantity_ID"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="@string/since"
+        android:hint="@string/indique"
         android:inputType="phone"/>
 
     <Button
+        android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Calcular"/>
+        android:text="@string/cal"/>
 
 
     <EditText

@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">MoneyChange 1.1</string>
+    <string name="app_name">MoneyChange 1.1.6</string>
    <string name="Title">MoneyChange.</string>
     <string name="USA">Usa Dollars</string>
     <string name="EU">Euros</string>
     <string name="DOP">Dominican Pesos</string>
     <string name="since">Indique el monto </string>
     <string name="resultado">Resutado </string>
-    <string name="Calcular">Calcular</string>
+    <string name="cal">Calcular</string>
+    <string name="indique">Indique Cantidad</string>
+
 
 
 

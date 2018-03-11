@@ -2,10 +2,11 @@ package com.example.admin.moneychange;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.view.View;
+import android.widget.Spinner;
 
 
-public class MainActivity extends AppCompatActivity implements  Operation  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +18,13 @@ public class MainActivity extends AppCompatActivity implements  Operation  {
 
 
 
-    @Override
-    public void getUs()
-    {
 
+
+    @Override
+    public void onClick( View view ) {
+        Spinner dollar,pesos,euro;
+
+        //  dollar = findViewById(R.id.)
 
     }
 }
