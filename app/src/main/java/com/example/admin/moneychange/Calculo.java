@@ -1,5 +1,7 @@
 package com.example.admin.moneychange;
 
+import android.widget.Switch;
+
 /**
  * Created by Admin on 3/10/2018.
  */
@@ -19,6 +21,14 @@ public class Calculo {
     public final double eurotodollar = 1.230684;
     public   double resultado;
     public  double cantidad ;
+
+    public enum Monedas{
+        Pesos,
+        Dollars,
+        Euros
+
+
+    }
 
        /* dollar to dollar DONE
         * dollar to peso DONE
@@ -73,6 +83,7 @@ public class Calculo {
         resultado = (cantidad * pesostoeuro * euro);
         return resultado;
     }
+
 
 
 }
