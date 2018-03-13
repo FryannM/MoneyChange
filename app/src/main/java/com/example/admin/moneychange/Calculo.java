@@ -1,89 +1,61 @@
 package com.example.admin.moneychange;
 
-import android.widget.Switch;
+import android.os.Build;
 
 /**
  * Created by Admin on 3/10/2018.
  */
 
 public class Calculo {
+    public static final double dollarToPeso = 49.05;
+    public static final double dollarToEuro = 0.812513;
+    public static final double pesoToDollar = 0.02014;
+    public static final double pesoToEuro = 0.0165346334;
+    public static final double euroToPesos = 50;
+    public static final double euroToDollar = 1.230684;
 
-    public final double pesos =  1;
-    public final double dollar = 1;
-    public final double euro = 1;
-    public final double dollarstopeso = 49.05;
-    public final double dollartoeuro = 0.812513;
-    public final  double pesotodollar = 0.02014;
-    public final double pesostoeuro = 0.0165346334;
-    public final double eurotopesos = 50;
-
-
-    public final double eurotodollar = 1.230684;
-    public   double resultado;
-    public  double cantidad ;
-
-    public enum Monedas{
+    public enum Moneda {
         Pesos,
         Dollars,
         Euros
-
-
     }
 
-       /* dollar to dollar DONE
-        * dollar to peso DONE
-        * dollar to euro DONE
-        *
-        * euro to dollar DONE
-        * euro to peso  DONE
-        *
-        * peso to dollar  DONE
-        * peso to euro NO DONE
-        *
-        */
-
-    public double  dollarsToPeso()
+    public static double Convertir(Moneda origen, Moneda destino, double cantidadOrigen)
     {
-        resultado = (dollarstopeso * cantidad * pesos);
-        return resultado;
+         switch (origen){
+             case Pesos:
+                 switch (destino){
+                     case Pesos:
+                         return cantidadOrigen;
+                     case Dollars:
+                         return cantidadOrigen * pesoToDollar;
+                     case Euros:
+                         return cantidadOrigen * pesoToEuro;
+                 }
+                 break;
+             case Dollars:
+                 switch (destino) {
+                     case Dollars:
+                         return cantidadOrigen;
+                     case Pesos:
+                         return cantidadOrigen * dollarToPeso;
+                     case Euros:
+                         return cantidadOrigen * dollarToEuro;
+                 }
+                 break;
+             case Euros:
+                 switch (destino) {
+                     case Euros:
+                         return cantidadOrigen;
+                     case Pesos:
+                         return cantidadOrigen * euroToPesos;
+                     case Dollars:
+                         return cantidadOrigen * euroToDollar;
+                 }
+                 break;
+         }
+         return cantidadOrigen;
     }
-    public double dollarsToEuro()
-    {
-        resultado = (cantidad *  dollartoeuro *  euro);
-        return resultado;
-    }
-
-    public double dollarTodollar()
-    {
-        resultado = (cantidad * dollar * dollar);
-        return resultado;
-    }
-
-    public double euroTodollar()
-    {
-        resultado = (cantidad * eurotodollar * dollar);
-        return resultado;
-    }
-
-    public double pesoTodollar()
-    {
-        resultado = (cantidad * pesotodollar * dollar);
-        return resultado;
-    }
-
-
-    public double EuroToPesos()
-    {
-        resultado = (cantidad * eurotopesos * euro);
-        return resultado;
-    }
-
-    public double PesosToEuro()
-    {
-        resultado = (cantidad * pesostoeuro * euro);
-        return resultado;
-    }
-
-
-
 }
+
+

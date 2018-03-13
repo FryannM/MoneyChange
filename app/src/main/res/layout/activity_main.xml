@@ -48,14 +48,9 @@
         android:text="@string/cal"/>
 
 
-    <EditText
-            android:id="@+id/resultID"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/resultado"
-            android:editable="false"/>
-
-
-
-
+    <TextView
+        android:id="@+id/resultID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/resultado"/>
 </LinearLayout>
