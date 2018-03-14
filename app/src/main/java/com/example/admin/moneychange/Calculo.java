@@ -2,6 +2,10 @@ package com.example.admin.moneychange;
 
 import android.os.Build;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
+
 /**
  * Created by Admin on 3/10/2018.
  */
@@ -19,8 +23,14 @@ public class Calculo {
         Dollars,
         Euros
     }
+    static double Round(double num) {
 
-    public static double Convertir(Moneda origen, Moneda destino, double cantidadOrigen)
+            return new BigDecimal(num).round(new MathContext(4, RoundingMode.HALF_UP)).doubleValue();
+//new
+    }
+
+
+    public static double Convert(Moneda origen, Moneda destino, double cantidadOrigen)
     {
          switch (origen){
              case Pesos:

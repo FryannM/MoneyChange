@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+
 
 
     tools:context="com.example.admin.moneychange.MainActivity">
@@ -14,21 +16,25 @@
     <TextView
         android:id="@+id/TituloID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:drawableLeft="@mipmap/changemoney"
-        android:text="@string/Title" />
+        android:text="@string/Title"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
     <Spinner
-        android:id="@+id/spinner_desde"
+        android:id="@+id/spinner_origen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:drawSelectorOnTop="true"
+        android:scrollbarSize="19dp"
         />
     <Spinner
-        android:id="@+id/spinner_hasta"
+        android:id="@+id/spinner_destino"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginBottom="5dp"
         android:drawSelectorOnTop="true"
+        android:scrollbarSize="19dp"
         />
 
 
@@ -39,18 +45,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="@string/indique"
-        android:inputType="phone"/>
+        android:textColorHint="@color/black"
 
+        android:inputType="phone"
+        android:textSize="19dp"/>
+
+
+    <Button
+        android:id="@+id/btn_cleanData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/cleanData"/>
     <Button
         android:id="@+id/btn_calcular"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cal"/>
+        android:layout_height="match_parent"
+        android:text="@string/cal"
+        android:textColorHighlight="@color/colorPrimary"/>
+
 
 
     <TextView
         android:id="@+id/resultID"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="@string/resultado"/>
+        android:hint="@string/resultado"
+        android:textSize="19dp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:text="@string/Rights"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+
 </LinearLayout>

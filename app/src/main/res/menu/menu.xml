@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/acercade"
+        android:orderInCategory="10" />
+
+    <item
+        android:id="@+id/menu_version"
+        android:title="@string/version"
+        android:orderInCategory="1000"/>
+
+    <item
+        android:id="@+id/menu_restart"
+        android:title="@string/restart"
+        android:orderInCategory="1000"/>
+    <item
+        android:id="@+id/menu_close"
+        android:title="@string/Exit"
+        android:orderInCategory="1000"/>
+</menu>

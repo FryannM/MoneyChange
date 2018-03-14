@@ -1,22 +1,17 @@
 <resources>
-    <string name="app_name">MoneyChange 1.1.7</string>
-   <string name="Title">MoneyChange.</string>
-    <string name="USA">Usa Dollars</string>
-    <string name="EU">Euros</string>
-    <string name="DOP">Dominican Pesos</string>
+    <string name="app_name">MoneyChange 1.2.2</string>
+   <string name="Title">MoneyChange</string>
+
     <string name="since">Indique el monto </string>
     <string name="resultado">Resutado </string>
+    <string name="cleanData">Limpiar</string>
     <string name="cal">Calcular</string>
     <string name="indique">Indique Cantidad</string>
+    <string name="acercade">About</string>
+    <string name="Exit">Exit</string>
+    <string name="version">Version</string>
+    <string name="restart">Restart</string>
+    <string name="Rights"> Copyright © 2018 MoneyChange  All Rights Reserved </string>
 
-
-
-
-
-    <string-array name="Coins">USA
-        <item>@string/USA</item>
-        <item>@string/EU</item>
-        <item>@string/DOP</item>
-    </string-array>
 
 </resources>
